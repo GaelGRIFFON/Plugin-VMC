@@ -21,8 +21,6 @@ require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
 
 class vmc extends eqLogic {
 
-//jeedom::evaluateExpression($thermostat->getConfiguration('temperature_indoor'))
-
 
     /******************************* Attributs *******************************/ 
     /* Ajouter ici toutes vos variables propre à votre classe */
@@ -148,9 +146,10 @@ class vmc extends eqLogic {
           '#eqLink#' => $this->getLinkToConfiguration(),
           '#height#' => $this->getDisplay('height', 'auto'),
           '#width#' => $this->getDisplay('width', '330px'),
-          '#hide1#' => $hide1,
-          '#hide2#' => $hide2,
-          '#hide3#' => $hide3,
+          '#temperature_airneufexterieur#' => jeedom::evaluateExpression($this->getConfiguration('temperature_airneufexterieur')),
+          '#temperature_airneufinsuflé#' => jeedom::evaluateExpression($this->getConfiguration('temperature_airneufinsuflé')),
+          '#temperature_airvicie#' => jeedom::evaluateExpression($this->getConfiguration('temperature_airvicie')),
+          '#temperature_airvicierejete#' => jeedom::evaluateExpression($this->getConfiguration('temperature_airvicierejete'))
         );
 
         $parameters = $this->getDisplay('parameters');
