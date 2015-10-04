@@ -145,7 +145,7 @@ class vmc extends eqLogic {
           '#background_color#' => $background,
           '#eqLink#' => $this->getLinkToConfiguration(),
           '#height#' => $this->getDisplay('height', 'auto'),
-          '#width#' => $this->getDisplay('width', '330px'),
+          '#width#' => $this->getDisplay('width', '200px'),
           '#temperature_airneufexterieur#' => jeedom::evaluateExpression($this->getConfiguration('temperature_airneufexterieur')),
           '#temperature_airneufinsuflé#' => jeedom::evaluateExpression($this->getConfiguration('temperature_airneufinsuflé')),
           '#temperature_airvicie#' => jeedom::evaluateExpression($this->getConfiguration('temperature_airvicie')),
