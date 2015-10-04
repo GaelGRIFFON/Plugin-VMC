@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>vmc</id>
+    <name>VMC</name>
+    <description>Plugin permettant la gestion d'une VMC</description>
+    <icon>techno-ventilation</icon>
+    <licence>AGPL</licence>
+    <author>Gaël GRIFFON</author>
+    <installation>Aucune</installation>
+    <require>1.209</require>
+    <category>energy</category>
+</info>
+
